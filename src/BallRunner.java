@@ -9,7 +9,7 @@ public class BallRunner implements Runnable {
     public static int DX = 10;
     public static int DY = 10;
     private Ellipse2D.Double ball;
-    private Raqueta raquetas;
+    private paddleee raquetas;
     private int ballX;
     private int ballY;
     public static int contPLAYER1 = 0;
@@ -17,7 +17,7 @@ public class BallRunner implements Runnable {
     private int determinarX, determinarY;
     private int signoX = 1;
     private int signoY = 1;
-    public BallRunner(Shape shape, Raqueta p) {
+    public BallRunner(Shape shape, paddleee p) {
         ball = ( Ellipse2D.Double) shape;
         raquetas = p;
         ballX = 320;

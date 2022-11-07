@@ -1,5 +1,5 @@
 import java.awt.geom.Rectangle2D;
-public class Raqueta {
+public class paddleee {
     private Rectangle2D.Double pad1;
     private Rectangle2D.Double pad2;
     public static final int WIDTH = 90;
@@ -8,7 +8,7 @@ public class Raqueta {
     private final int[] yPositions = {10, 70, 130, 200, 270,330,390};
     private int pos = 4;
 
-    public Raqueta() {
+    public paddleee() {
         super();
         pad1 = new Rectangle2D.Double(10, 250, HEIGHT, WIDTH);
         pad2 = new Rectangle2D.Double(610, 250, HEIGHT, WIDTH);

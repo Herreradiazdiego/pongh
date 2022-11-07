@@ -8,7 +8,7 @@ public class Board extends JComponent implements Runnable, KeyListener {
     Dimension preferredSize = null;
     Ellipse2D.Double ball;
     private int P1, p2;
-    private Raqueta paddles;
+    private paddleee paddles;
     public Board(int contPlayer1, int contPlayer2){
         this.P1 = contPlayer1;
         this.p2 = contPlayer2;
@@ -17,7 +17,7 @@ public class Board extends JComponent implements Runnable, KeyListener {
         setOpaque(true);
         setBorder(BorderFactory.createMatteBorder(5, 5, 5, 5, Color.black));
         ball = new Ellipse2D.Double(20,320,15,15);
-        paddles = new Raqueta();
+        paddles = new paddleee();
 
         BallRunner bola = new BallRunner(ball, paddles);
         Thread t1 = new Thread(bola);
